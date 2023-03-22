@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+* h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+* p {
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+* .wrapper {
+  max-width: 1100px;
+  width: 100%;
+  margin: auto auto;
+  padding: 15px;
+}
+
+.main {
+  z-index: 10;
+  position: relative;
+  background-color: white;
+  height: 500px;
+}
+.main .section {
+  display: flex;
+  flex-direction: row;
+}
+.main .section .col {
+  height: max-content;
+  margin: auto;
+  padding: 10px;
+}
+.main .section .text-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main .section img {
+  width: 450px;
+}
+.main .section .section-button {
+  background-color: #c8a27a;
+  padding: 15px;
+  color: white;
+  border: none;
+  width: max-content;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  font-size: 12px;
+}
+.main .section .section-button p {
+  font-size: 12px;
+}/*# sourceMappingURL=main.css.map */

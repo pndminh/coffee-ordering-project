@@ -1,0 +1,39 @@
+@use 'base';
+@use 'variables';
+
+.main{
+    z-index: 10;
+    position: relative;
+    background-color: white;
+    height: 500px;
+    .section{
+        @include base.flex(row);
+        .col{
+            height: max-content;
+            margin: auto;
+            padding: 10px;
+        }
+        .text-col{
+            @include base.flex(column);
+            gap: 10px;
+        }
+        img{
+            width: 450px;
+        }
+        .section-button{
+            background-color: variables.$accent;
+            padding: 15px;
+            color: white;
+            border: none;
+            width: max-content;
+            text-transform: uppercase;
+            @include base.flex(row);
+            gap: 25px;
+            align-items: center;
+            font-size: 12px;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
