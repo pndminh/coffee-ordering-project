@@ -20,20 +20,37 @@
         img{
             width: 450px;
         }
-        .section-button{
-            background-color: variables.$accent;
-            padding: 15px;
-            color: white;
-            border: none;
-            width: max-content;
-            text-transform: uppercase;
+    }
+    .merchandise{
+        .row{
             @include base.flex(row);
-            gap: 25px;
-            align-items: center;
-            font-size: 12px;
-            p{
-                font-size: 12px;
+            justify-content: space-around;
+            gap: 40px;
+            .img-container{
+                img{
+                    max-width: 320px;
+                }
             }
         }
+        .row-button{
+            @include base.flex(row);
+            justify-content: space-around;
+        }
+    }
+}
+
+.section-button{
+    background-color: variables.$accent;
+    padding: 15px;
+    color: white;
+    border: none;
+    width: max-content;
+    text-transform: uppercase;
+    @include base.flex(row);
+    gap: 25px;
+    align-items: center;
+    font-size: 12px;
+    p{
+        font-size: 12px;
     }
 }
