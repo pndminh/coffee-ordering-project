@@ -8,7 +8,7 @@
 }
 * h2 {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 * p {
@@ -29,23 +29,6 @@
   background-color: white;
   height: 500px;
 }
-.main .section {
-  display: flex;
-  flex-direction: row;
-}
-.main .section .col {
-  height: max-content;
-  margin: auto;
-  padding: 10px;
-}
-.main .section .text-col {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.main .section img {
-  width: 450px;
-}
 .main .merchandise .row {
   display: flex;
   flex-direction: row;
@@ -59,6 +42,89 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+.main .products .carousel-viewport .carousel-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+}
+.main .products .carousel-viewport .carousel-slide .product {
+  text-align: center;
+}
+.main .products .carousel-viewport .carousel-slide .product img {
+  width: 100%;
+}
+.main .products .carousel-viewport .carousel-slide .product .product-name {
+  text-transform: capitalize;
+}
+.main .promo {
+  width: 100%;
+  padding: 80px;
+  background-image: url("../../img/decoration-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .promo .wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.main .promo .promo-item {
+  background-color: white;
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+}
+.main .promo .promo-item .col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .promo .promo-item .col img {
+  width: 100%;
+}
+.main .promo .promo-item .col .title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main .promo .promo-item .col .row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.main .promo .promo-item .col p, .main .promo .promo-item .col a {
+  color: #6d6d6d;
+  font-size: 14px;
+}
+.main .promo .promo-item .col a:hover {
+  font-weight: 400;
+  color: black;
+}
+
+.section-heading {
+  font-size: 36px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 0;
+}
+.section .col {
+  height: max-content;
+  margin: auto;
+  padding: 10px;
+}
+.section .content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.section img {
+  width: 450px;
 }
 
 .section-button {
@@ -76,4 +142,5 @@
 }
 .section-button p {
   font-size: 12px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */

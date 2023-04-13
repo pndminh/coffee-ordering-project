@@ -6,21 +6,6 @@
     position: relative;
     background-color: white;
     height: 500px;
-    .section{
-        @include base.flex(row);
-        .col{
-            height: max-content;
-            margin: auto;
-            padding: 10px;
-        }
-        .text-col{
-            @include base.flex(column);
-            gap: 10px;
-        }
-        img{
-            width: 450px;
-        }
-    }
     .merchandise{
         .row{
             @include base.flex(row);
@@ -37,6 +22,88 @@
             justify-content: space-around;
         }
     }
+    .products{
+        .carousel-viewport{
+            .carousel-slide{
+                @include base.flex(row);
+                justify-content: space-between;
+                gap: 40px;
+                .product{
+                    img{
+                        width: 100%;
+                    }
+                    text-align: center;
+                    .product-name{
+                        text-transform: capitalize;
+                    }
+                }
+            }
+        }
+    }
+    .promo{
+        width: 100%;
+        padding: 80px;
+        background-image: url("../../img/decoration-3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .wrapper{
+            @include base.flex(row);
+            gap: 30px;
+        }
+        .promo-item{
+            background-color: white;
+            padding: 4px;
+            @include base.flex(row);
+            .col{
+                height: 100%;
+                @include base.flex(column);
+                justify-content: space-between;
+                img{
+                    width: 100%;
+                }
+                .title{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+                .row{
+                    @include base.flex(row);
+                    align-items: baseline;
+                    justify-content: space-between;
+                }
+                p, a{
+                    color: #6d6d6d;
+                    font-size: 14px;
+                }
+                a{
+                    &:hover{
+                        font-weight: 400;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.section-heading{
+    font-size: 36px;
+}
+.section{
+    @include base.flex(row);
+    margin: 80px 0;
+    .col{
+        height: max-content;
+        margin: auto;
+        padding: 10px;
+    }
+    .content-col{
+        @include base.flex(column);
+        gap: 40px;
+    }
+    img{
+        width: 450px;
+    }
 }
 
 .section-button{
@@ -52,5 +119,6 @@
     font-size: 12px;
     p{
         font-size: 12px;
+        font-weight: 400;
     }
 }
