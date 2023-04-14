@@ -1,11 +1,46 @@
 @use 'base';
 @use 'variables';
 
+.section-button-arrow-dark{
+    @include base.button(white, variables.$accent, 15px);
+    gap: 25px;
+    p{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    &:hover{
+        transform: translate(0, -6px);
+    }
+}
+.section-button-arrow-light{
+    @include base.button(variables.$accent, white, 15px);
+    gap: 25px;
+    
+}
+.section-button-center-dark{
+    @include base.button(white, variables.$accent, 16px 50px);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    &:hover{
+        transform: translate(0, -6px);
+    }
+}
+.section-button-center-light{
+    @include base.button(variables.$accent, white, 16px 50px);
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    &:hover{
+        transform: translate(0, -6px);
+    }
+}
+
 .main{
     z-index: 10;
     position: relative;
     background-color: white;
-    height: 500px;
+    background-attachment: fixed;
     .merchandise{
         .row{
             @include base.flex(row);
@@ -19,7 +54,8 @@
         }
         .row-button{
             @include base.flex(row);
-            justify-content: space-around;
+            justify-content: center;
+            gap: 20px;
         }
     }
     .products{
@@ -38,6 +74,9 @@
                     }
                 }
             }
+        }
+        button{
+            margin: auto;
         }
     }
     .promo{
@@ -76,7 +115,6 @@
                 }
                 a{
                     &:hover{
-                        font-weight: 400;
                         color: black;
                     }
                 }
@@ -84,41 +122,24 @@
         }
 
     }
-}
+    .instagram{
+        .wrapper{
+            margin: 0 auto;
+            text-align: center;
+            
+            img{
+                width: 48px;
+                margin: 0 0 10px;
 
-.section-heading{
-    font-size: 36px;
-}
-.section{
-    @include base.flex(row);
-    margin: 80px 0;
-    .col{
-        height: max-content;
-        margin: auto;
-        padding: 10px;
-    }
-    .content-col{
-        @include base.flex(column);
-        gap: 40px;
-    }
-    img{
-        width: 450px;
+            }
+            .section-heading{
+                font-size: 24px;
+                letter-spacing: .1em;
+            }
+        }
     }
 }
 
-.section-button{
-    background-color: variables.$accent;
-    padding: 15px;
-    color: white;
-    border: none;
-    width: max-content;
-    text-transform: uppercase;
-    @include base.flex(row);
-    gap: 25px;
-    align-items: center;
-    font-size: 12px;
-    p{
-        font-size: 12px;
-        font-weight: 400;
-    }
-}
+
+
+

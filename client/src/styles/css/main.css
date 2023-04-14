@@ -6,28 +6,146 @@
   vertical-align: baseline;
   font-family: "M PLUS Rounded 1c", sans-serif;
 }
-* h2 {
+
+h2 {
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
-* p {
+
+p {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   font-size: 18px;
 }
-* .wrapper {
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+a:hover {
+  color: #d8d8d8;
+}
+
+.wrapper {
   max-width: 1100px;
   width: 100%;
   margin: auto auto;
   padding: 15px;
+  position: relative;
+}
+
+.section-heading {
+  font-size: 36px;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 60px 0;
+  position: relative;
+}
+.section .col {
+  height: max-content;
+  margin: auto;
+  padding: 10px;
+}
+.section .content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.section .content-row {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.section img {
+  width: 450px;
+}
+
+.section-button-arrow-dark {
+  background-color: #c8a27a;
+  padding: 15px;
+  color: white;
+  border: 1px solid white;
+  width: max-content;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  gap: 25px;
+}
+.section-button-arrow-dark p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.section-button-arrow-dark:hover {
+  transform: translate(0, -6px);
+}
+
+.section-button-arrow-light {
+  background-color: white;
+  padding: 15px;
+  color: #c8a27a;
+  border: 1px solid #c8a27a;
+  width: max-content;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  gap: 25px;
+}
+
+.section-button-center-dark {
+  background-color: #c8a27a;
+  padding: 16px 50px;
+  color: white;
+  border: 1px solid white;
+  width: max-content;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.section-button-center-dark:hover {
+  transform: translate(0, -6px);
+}
+
+.section-button-center-light {
+  background-color: white;
+  padding: 16px 50px;
+  color: #c8a27a;
+  border: 1px solid #c8a27a;
+  width: max-content;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+.section-button-center-light:hover {
+  transform: translate(0, -6px);
 }
 
 .main {
   z-index: 10;
   position: relative;
   background-color: white;
-  height: 500px;
+  background-attachment: fixed;
 }
 .main .merchandise .row {
   display: flex;
@@ -41,7 +159,8 @@
 .main .merchandise .row-button {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 }
 .main .products .carousel-viewport .carousel-slide {
   display: flex;
@@ -57,6 +176,9 @@
 }
 .main .products .carousel-viewport .carousel-slide .product .product-name {
   text-transform: capitalize;
+}
+.main .products button {
+  margin: auto;
 }
 .main .promo {
   width: 100%;
@@ -100,47 +222,17 @@
   font-size: 14px;
 }
 .main .promo .promo-item .col a:hover {
-  font-weight: 400;
   color: black;
 }
-
-.section-heading {
-  font-size: 36px;
+.main .instagram .wrapper {
+  margin: 0 auto;
+  text-align: center;
 }
-
-.section {
-  display: flex;
-  flex-direction: row;
-  margin: 80px 0;
+.main .instagram .wrapper img {
+  width: 48px;
+  margin: 0 0 10px;
 }
-.section .col {
-  height: max-content;
-  margin: auto;
-  padding: 10px;
-}
-.section .content-col {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.section img {
-  width: 450px;
-}
-
-.section-button {
-  background-color: #c8a27a;
-  padding: 15px;
-  color: white;
-  border: none;
-  width: max-content;
-  text-transform: uppercase;
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-  align-items: center;
-  font-size: 12px;
-}
-.section-button p {
-  font-size: 12px;
-  font-weight: 400;
+.main .instagram .wrapper .section-heading {
+  font-size: 24px;
+  letter-spacing: 0.1em;
 }/*# sourceMappingURL=main.css.map */
