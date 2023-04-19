@@ -141,6 +141,13 @@
     padding-top: 16px;
     
 }
+.product-item-content{
+    justify-content: center;
+    align-items: center;
+}
+.product-item-price{
+    margin-right: 40px;;
+}
 
 /* Search box */
 #searchbar{
