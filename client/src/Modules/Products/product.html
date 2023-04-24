@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product page</title>
-    <link rel="stylesheet" href="/client/src/assets/styles/css/product.css">
 
-    <link rel="stylesheet" href="/client/src/assets/styles/css/header.css">
-    <link rel="stylesheet" href="/client/src/assets/styles/css/base.css">
-    <link rel="stylesheet" href="/client/src/assets/styles/css/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
-    <link rel="stylesheet" href="/client/src/assets/styles/css/footer.css">
+    <link rel="stylesheet" href="../../assets//styles/css/product.css">
+    <link rel="stylesheet" href="../../assets/styles/css/header.css">
+    <link rel="stylesheet" href="../../assets/styles/css/base.css">
+    <link rel="stylesheet" href="../../assets/styles/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="../../assets/styles/css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;600;700;900&family=Nunito+Sans:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;600;700;900&family=Nunito+Sans:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <script src="./product.js"></script>
-    
+
 </head>
+
 <body>
     <div class="content-header">
-        <img 
-            src="https://www.couvee.co.id/wp-content/uploads/2020/01/81D7C1B6-7763-411D-816B-742009C14740.jpeg" 
-            alt="img-background" 
-            class="img-background"
-        />
+        <img src="https://www.couvee.co.id/wp-content/uploads/2020/01/81D7C1B6-7763-411D-816B-742009C14740.jpeg"
+            alt="img-background" class="img-background" />
         <div class="content-header-box">
             <div class="content-header-box-left">
                 <svg class="logo-insta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    <path
+                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                 </svg>
             </div>
             <div class="content-header-box-center">
-                <img src="https://www.couvee.co.id/wp-content/themes/couvee/assets/images/logo-text.png" alt="img-logo"/>
+                <img src="https://www.couvee.co.id/wp-content/themes/couvee/assets/images/logo-text.png"
+                    alt="img-logo" />
             </div>
             <div class="content-header-box-right">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
                 </svg>
             </div>
         </div>
@@ -45,8 +49,7 @@
     </div>
     <div class="content-body">
         <h2 class="content-body-title">PRODUCTS</h2>
-        <input id="searchbar" onkeyup="search_product()" type="text"
-        name="search" placeholder="Search product..">
+        <input id="searchbar" onkeyup="search_product()" type="text" name="search" placeholder="Search product..">
 
         <div class="content-body-box">
             <div class="content-body-list">
@@ -67,18 +70,19 @@
                 </div>
             </div>
 
-            
+
 
             <div class="content-body-item">
                 <div class="content-body-item-product">
-                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/81F180C1-BA4A-467C-A7B9-8DCD43431940-768x768.jpg" alt="product" class="product-item"/>
+                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/81F180C1-BA4A-467C-A7B9-8DCD43431940-768x768.jpg"
+                        alt="product" class="product-item" />
                     <p class="product-item-title">
                         Red Velvet Latte
                     </p>
                     <div class="product-item-content">
                         <div class="price">
                             <p class="product-item-price">
-                            5$
+                                5$
                             </p>
                         </div>
                         <div class="cart">
@@ -87,7 +91,8 @@
                     </div>
                 </div>
                 <div class="content-body-item-product">
-                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/211B2BBB-7277-487F-9752-92AE422460FD-1024x1024.jpg" alt="product" class="product-item"/>
+                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/211B2BBB-7277-487F-9752-92AE422460FD-1024x1024.jpg"
+                        alt="product" class="product-item" />
                     <p class="product-item-title">
                         Melacca
                     </p>
@@ -99,7 +104,8 @@
                     </div>
                 </div>
                 <div class="content-body-item-product">
-                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/F03B2AB7-12B6-47F6-AA82-3B924C32F96D-1024x1024.jpg" alt="product" class="product-item"/>
+                    <img src="https://www.couvee.co.id/wp-content/uploads/2019/07/F03B2AB7-12B6-47F6-AA82-3B924C32F96D-1024x1024.jpg"
+                        alt="product" class="product-item" />
                     <p class="product-item-title">
                         Black Cookie Latte
                     </p>
@@ -110,7 +116,7 @@
                         <a href="#" class="fa-solid fa-cart-shopping" style="color:black;"></a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
@@ -118,7 +124,7 @@
         <div class="wrapper">
             <div class="section">
                 <div class="logo">
-                    <img src="/client/src/assets/img/logo-text.png" alt="">
+                    <img src="../../assets/img/logo-text.png" alt="">
                 </div>
                 <div class="content-col">
                     <p>LINKS</p>
@@ -155,4 +161,5 @@
         </div>
     </div>
 </body>
+
 </html>
