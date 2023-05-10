@@ -1,18 +1,27 @@
 // client/src/App.js
 
 import React from "react";
-import logo from "./logo.svg";
+import Login from "./Modules/LoginPage/login"; 
+import Signup from "./Modules/LoginPage/signup";
+import Home from "./Modules/LoginPage/home";
 import "./App.css";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+
 
 function App() {
+
   return (
-    <React.Fragment>
+    <div className="App">
+    <Router>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/product" element={<Product />} />
-        
+        {/* <Route path="/" element={<Homepage />} />
+        <Route path="/product" element={<Product />} /> */}
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/home" element={<Home />} />
       </Routes>
-    </React.Fragment>
+    </Router>
+    </div>
   );
 }
 
