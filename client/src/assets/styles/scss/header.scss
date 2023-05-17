@@ -16,7 +16,7 @@
             color: #242424;
             &:hover{
                 cursor: pointer;
-                color:  lighten(#242424,20%);
+                color:  lighten(#242424,10%);
             }
         } 
     }
@@ -50,33 +50,6 @@
                 position: absolute;
                 z-index: 1;
             }
-        }
-    }
-}
-.overlay{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    z-index: 999;
-    @include base.flex(column);
-    transform: translatey(100%);
-    transition: transform 0.4s ease-in-out;
-    &__close {
-
-        right: 0;
-        position: absolute;
-        cursor: pointer;
-        transition: transform 0.4s ease-in-out 0.2s;
-      }
-    .overlay-menu{
-        @include base.flex(column);
-        justify-content: space-between;
-        text-align: center;
-        .a{
-            font-size: 30px;
         }
     }
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/styles/css/base.css">
     <link rel="stylesheet" href="../../assets/styles/css/main.css">
     <link rel="stylesheet" href="../../assets/styles/css/footer.css">
+    <link rel="stylesheet" href="../../assets/styles/css/overlay-menu.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
             <div class="nav">
                 <i class="fa-brands fa-instagram"></i>
                 <img src="../../assets/img/logo-text.png">
-                <label for="menu-control"><i class="fa-solid fa-bars"></i></label>
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
             </div>
         </div>
         <div class="image-container">
@@ -217,16 +218,26 @@
             </div>
         </div>
     </div>
-    <div class="overlay">
-        <i class="fa-solid fa-x overlay__close"></i>
+    <div class="overlay" id="overlay-menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
         <nav class="overlay-menu">
-            <a href="">HOMPAGE</a>
+            <a href=""> HOMEPAGE </a>
             <a href="">STORY</a>
             <a href="">MENU</a>
             <a href="">LOCATIONS</a>
             <a href="">CONTACT</a>
         </nav>
     </div>
+    
+    <script>
+        function openNav(){
+            document.getElementById("overlay-menu").style.height = "100%";
+        }
+        function closeNav(){
+            document.getElementById("overlay-menu").style.height = "0%";
+        }
+    </script>
 
 </body>
 

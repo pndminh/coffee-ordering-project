@@ -38,7 +38,7 @@
         text-decoration: none;
         color: #242424;
         &:hover{
-            color: #d8d8d8;
+            color: lighten(#242424,10%);
         }
     }
     

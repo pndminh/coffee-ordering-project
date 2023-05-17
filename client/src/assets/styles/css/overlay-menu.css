@@ -62,4 +62,49 @@ a:hover {
 }
 .section img {
   width: 450px;
-}/*# sourceMappingURL=base.css.map */
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+.overlay .overlay-menu {
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  gap: 20px;
+}
+.overlay .overlay-menu a {
+  font-size: 25px;
+  position: relative;
+}
+.overlay .overlay-menu a:hover {
+  color: #3e3e3e;
+}
+.overlay .overlay-menu a:hover:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -10%;
+  width: 120%;
+  height: 3px;
+  background-color: #c8a27a;
+  z-index: 1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}/*# sourceMappingURL=overlay-menu.css.map */
