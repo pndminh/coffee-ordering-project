@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom"
+import "../../assets/styles/css/login.css"
 
 function Login() {
 
@@ -9,7 +10,7 @@ function Login() {
   const [email,setEmail]=useState('')
   const [password, setPassword]=useState('')
 
-  async function submit(e){
+  async function onSubmit(e){
       e.preventDefault();
 
       
@@ -23,11 +24,11 @@ function Login() {
 
           }
           else if(res.data==="notexist"){
-            alert("User have not sign")
+            alert("Please sign in to continue")
           }
         })
         .catch(e=>{
-          alert("wrong details")
+          alert("Wrong details")
           console.log(e);
         })
       } catch (e) {
@@ -37,33 +38,24 @@ function Login() {
   }
 
   return (
-    <div className="login">
+    <div className="form-box">
       <h1>Login</h1>
-      <form action="POST">
-        <input
-          type="text"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          placeholder="Email"
-          name=""
-          id=""
-        ></input>
-        <input
-          type="text"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
-          placeholder="Password"
-          name=""
-          id=""
-        ></input>
-
-        <input type="submit" onClick={submit}/>
+      <form className="login" action="post">
+        <div className="field">
+          <input type="text" name="email" id="email" placeholder="Email"
+                 onChange={(e) => {
+                  setEmail(e.target.value);
+                }}/>
+        </div>
+        <div className="field">
+          <input type="password" name="password" id="password" placeholder="Password"
+                  onChange={(e) => {
+                    setPassword(e.target.value);
+                }}/>
+        </div>
+        <input type="submit" onClick={onSubmit}/>
       </form>
-      <br />
-      <p>OR</p>
-      <Link to="/signup"> Signup Page</Link>
+      <p>Don't have an account? <Link to="/signup">Signup</Link></p>
     </div>
   );
 }
