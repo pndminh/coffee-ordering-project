@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/styles/css/base.css">
+    <link rel="stylesheet" href="../../assets/styles/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;600;700;900&family=Nunito+Sans:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="form-box">
+        <h1>Signup</h1>
+        <form action="" method="post" class="signup" onsubmit="return validateSignUp()">
+            <div class="field">
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                
+            </div>
+            <div class="container">
+                <div class="field">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="field">
+                    <input type="text" name="phone" id="phone" placeholder="Phone number">
+                </div>
+            </div>
+            <div class="field">
+                <input type="text" name="address" id="address" placeholder="Address">
+            </div>
+            <div class="container">
+                <div class="field">
+                    <input type="password" name="password" id="password" placeholder="Password"></div>
+                    
+                <div class="field">
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm password">
+                </div>
+            </div>
+            <div class="field">
+                <input type="submit">
+            </div>
+        </form>
+        <p>Already have an account? <a href="">Login</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
